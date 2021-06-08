@@ -1,0 +1,10 @@
+#introduceContainer {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.introduce__inner {
+  width: 100%;
+  height: 380px;
+  display: flex;
+}
