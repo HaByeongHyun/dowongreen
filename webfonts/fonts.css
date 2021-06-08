@@ -3,3 +3,8 @@
 body {
   font-family: 'Noto Sans KR', sans-serif;
 }
+
+p {
+  font-family: 'Nanum Gothic', sans-serif;
+  line-height: 2.5rem;
+}
