@@ -37,21 +37,21 @@
   --annimation-duration: 0.3s;
 }
 
-#customerContainer {
+#bannerContainer {
   width: 100%;
 }
 
-#customerContainer .banner-img {
+#bannerContainer .banner-img {
   height: 23rem;
   background: url('../images/img (2).jpg') center/cover no-repeat;
 }
 
-#customerContainer .banner-overlay {
+#bannerContainer .banner-overlay {
   background-color: rgba(0, 0, 0, 0.3);
   height: 100%;
 }
 
-#customerContainer .banner {
+#bannerContainer .banner {
   width: 100%;
   height: 100%;
   display: flex;
@@ -62,24 +62,21 @@
   text-shadow: var(--font-shadow-white);
 }
 
-#customerContainer .banner-title {
-  font-size: var(--font-regular);
+#bannerContainer .banner-title {
+  font-size: var(--font-large);
+  margin-bottom: 1.2rem;
 }
 
-#customerContainer .banner-title h2 {
-  margin: 0 auto;
-}
-
-#customerContainer .banner-desc {
+#bannerContainer .banner-desc {
   font-size: 1.8rem;
 }
 
-#customerContainer .banner-desc p {
+#bannerContainer .banner-desc p {
   margin-top: 0;
   font-family: 'Noto Sans KR', sans-serif;
 }
 
-#customerContainer .location_wrap {
+#location_wrap {
   width: 100%;
   height: 70rem;
   margin: 5rem auto;
@@ -88,13 +85,13 @@
   justify-content: center;
 }
 
-#customerContainer .location__map {
+#location_wrap .location__map {
   width: 50%;
   display: flex;
   justify-content: flex-end;
 }
 
-#customerContainer .location__address-inner {
+#location_wrap .location__address-inner {
   width: 57rem;
   height: 100%;
   display: flex;
@@ -103,7 +100,7 @@
   align-items: center;
 }
 
-#customerContainer .location__address {
+#location_wrap .location__address {
   width: 50%;
   height: 42rem;
   display: flex;
@@ -112,21 +109,21 @@
   padding-left: 8.5rem;
 }
 
-#customerContainer .location__logo {
+#location_wrap .location__logo {
   background: center/cover no-repeat;
 }
 
-#customerContainer .location__desc {
+#location_wrap .location__desc {
   font-size: 1.5rem;
   color: var(--color-black-accent);
 }
 
-#customerContainer .location__desc-icons {
+#location_wrap .location__desc-icons {
   margin: 1.2rem auto;
   font-weight: var(--weight-bold);
 }
 
-#customerContainer .location__desc-icons p {
+#location_wrap .location__desc-icons p {
   display: inline-block;
   background-color: var(--color-black-accent);
   height: 3rem;
@@ -137,6 +134,6 @@
   margin-right: 1.2rem;
 }
 
-#customerContainer .location__desc-icons i {
+#location_wrap .location__desc-icons i {
   color: var(--color-white);
 }

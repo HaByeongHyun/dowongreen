@@ -5,32 +5,113 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="DOWON GREEN INDUSTRY - WEB SITE" />
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="images/logo-ico.png" />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&family=Noto+Sans+KR:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/contact.css" />
     <title>문의상담 - 도원그린산업</title>
   </head>
   <body>
-    <div id="wrap">
-      <!-- Header -->
-      <header id="mainGnb">
-        <div class="main__gnb-logo">
-          <a href="main.html"><img src="images/logo.jpg" alt="main-logo" /></a>
+    <!-- Header -->
+    <header id="mainGnb">
+      <div class="main__gnb-logo">
+        <a href="main.html"><img src="images/logo.jpg" alt="main-logo" /></a>
+      </div>
+      <div class="main__gnb-button">
+        <ul class="main__gnb-button-list">
+          <li class="main__gnb-button-detail"><a href="#">기업소개</a></li>
+          <li class="main__gnb-button-detail"><a href="#">생산제품</a></li>
+          <li class="main__gnb-button-detail"><a href="#">특허공법</a></li>
+          <li class="main__gnb-button-detail"><a href="#">시공실적</a></li>
+          <li class="main__gnb-button-detail"><a href="#">상담문의</a></li>
+          <li class="main__gnb-button-detail">
+            <a href="#">
+              <i class="fas fa-search"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <!-- Contact Banner -->
+    <section id="bannerContainer">
+      <article class="banner-img">
+        <div class="banner-overlay">
+          <div class="banner">
+            <div class="banner-title"><h2>문의상담</h2></div>
+            <div class="banner-desc">
+              <p>사람과 자연이 함께하는 건강한 주거환경을 만들겠습니다.</p>
+            </div>
+          </div>
         </div>
-        <div class="main__gnb-button">
-          <ul class="main__gnb-button-list">
-            <li class="main__gnb-button-detail"><a href="#">기업소개</a></li>
-            <li class="main__gnb-button-detail"><a href="#">생산제품</a></li>
-            <li class="main__gnb-button-detail"><a href="#">특허공법</a></li>
-            <li class="main__gnb-button-detail"><a href="#">시공실적</a></li>
-            <li class="main__gnb-button-detail"><a href="#">상담문의</a></li>
-            <li class="main__gnb-button-detail">
-              <a href="#">
-                <i class="fas fa-search"></i>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </header>
-      <!-- Customer contact -->
-      <section id="customerContainer" class="container">
+      </article>
+    </section>
+    <!-- Customer contact -->
+    <div class="contact__form-container">
+      <div class="contact__form">
+        <section class="contact__header">
+          <h2>정성을 다해<br />상담해 드리겠습니다.</h2>
+          <div class="contact__header-bar"></div>
+        </section>
+        <section class="contact__form-main">
+          <div class="contact__contents">
+            <label for="contact__input-name">성함</label>
+            <input
+              type="text"
+              class="contact__input"
+              id="contact__input-name"
+              placeholder="ex) 홍길동"
+            />
+          </div>
+          <div class="contact__contents">
+            <label for="contact__input-company">기업·단체명/직함</label>
+            <input
+              type="text"
+              class="contact__input"
+              id="contact__input-company"
+              placeholder="ex) 도원그린산업 / 기획부 부장"
+            />
+          </div>
+          <div class="contact__contents">
+            <label for="contact__input-email">이메일</label>
+            <input
+              type="text"
+              class="contact__input"
+              id="contact__input-email"
+              placeholder="ex) example@email.com"
+            />
+          </div>
+          <div class="contact__contents contact__context">
+            <label for="contact">문의 내용</label>
+            <textarea
+              name="contact"
+              class="contact__input"
+              cols="100"
+              rows="5"
+              placeholder="이곳에 문의 내용을 기입해주십시오."
+            ></textarea>
+          </div>
+          <span class="contact__check">
+            <input type="checkbox" id="contact__checkbox" />
+            <label for="contact__checkbox"
+              >도원그린산업 웹사이트의 <a href="#">개인정보 취급방침</a>을
+              읽었으며 이에 동의합니다.</label
+            >
+          </span>
+          <div class="contact__btn-container">
+            <button class="contact__submit">문의하기</button>
+          </div>
+        </section>
+      </div>
+    </div>
+    <!-- <section id="customerContainer" class="container">
         <div class="banner-img">
           <div class="banner-overlay">
             <div class="banner">
@@ -77,88 +158,87 @@
             </p>
           </div>
         </section>
-      </section>
-      <!-- Footer -->
-      <section id="fnbContainer" class="container">
-        <div class="fnb__wrap">
-          <div class="fnb__top">
-            <div class="fnb__logo">
-              <div class="fnb__logo-img">
-                <a href="main.html">
-                  <img src="images/logo-foot.png" alt="footer-logo" />
-                </a>
-              </div>
-              <div class="fnb__logo-btn">
-                <div class="fnb__logo-btn-top fnb__logo-elements">
-                  <div class="fnb__logo-btn-title">
-                    <a href="#">
-                      <span>회사소개</span>
-                    </a>
-                  </div>
-                  <div class="fnb__logo-btn-title">
-                    <a href="#">
-                      <span>생산제품</span>
-                    </a>
-                  </div>
-                  <div class="fnb__logo-btn-title">
-                    <a href="#">
-                      <span>시공실적</span>
-                    </a>
-                  </div>
+      </section> -->
+    <!-- Footer -->
+    <section id="fnbContainer" class="container">
+      <div class="fnb__wrap">
+        <div class="fnb__top">
+          <div class="fnb__logo">
+            <div class="fnb__logo-img">
+              <a href="main.html">
+                <img src="images/logo-foot.png" alt="footer-logo" />
+              </a>
+            </div>
+            <div class="fnb__logo-btn">
+              <div class="fnb__logo-btn-top fnb__logo-elements">
+                <div class="fnb__logo-btn-title">
+                  <a href="#">
+                    <span>회사소개</span>
+                  </a>
                 </div>
-                <div class="fnb__logo-btn-bottom fnb__logo-elements">
-                  <div class="fnb__logo-btn-title">
-                    <a href="#">
-                      <span>회사연혁</span>
-                    </a>
-                  </div>
-                  <div class="fnb__logo-btn-title">
-                    <a href="#">
-                      <span>특허공법</span>
-                    </a>
-                  </div>
-                  <div class="fnb__logo-btn-title">
-                    <a href="#">
-                      <span>문의상담</span>
-                    </a>
-                  </div>
+                <div class="fnb__logo-btn-title">
+                  <a href="#">
+                    <span>생산제품</span>
+                  </a>
+                </div>
+                <div class="fnb__logo-btn-title">
+                  <a href="#">
+                    <span>시공실적</span>
+                  </a>
                 </div>
               </div>
-            </div>
-            <div class="fnb__info">
-              <p>유한회사 도원그린산업 | 대표:김은정</p>
-              <p>전북 익산시 왕궁면 안림길 31-5 (54575)</p>
-              <p>Tel. 063-834-7322 | Fax. 063-834-7795</p>
-              <p>E-mail. dowon7731@naver.com</p>
-            </div>
-            <div class="fnb__contact">
-              <h4 class="fnb__contact-elements">고객센터</h4>
-              <h2 class="fnb__contact-elements">063-834-7322</h2>
-              <button class="fnb__contact-button">CONTACT</button>
+              <div class="fnb__logo-btn-bottom fnb__logo-elements">
+                <div class="fnb__logo-btn-title">
+                  <a href="#">
+                    <span>회사연혁</span>
+                  </a>
+                </div>
+                <div class="fnb__logo-btn-title">
+                  <a href="#">
+                    <span>특허공법</span>
+                  </a>
+                </div>
+                <div class="fnb__logo-btn-title">
+                  <a href="#">
+                    <span>문의상담</span>
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
+          <div class="fnb__info">
+            <p>유한회사 도원그린산업 | 대표:김은정</p>
+            <p>전북 익산시 왕궁면 안림길 31-5 (54575)</p>
+            <p>Tel. 063-834-7322 | Fax. 063-834-7795</p>
+            <p>E-mail. dowon7731@naver.com</p>
+          </div>
+          <div class="fnb__contact">
+            <h4 class="fnb__contact-elements">고객센터</h4>
+            <h2 class="fnb__contact-elements">063-834-7322</h2>
+            <button class="fnb__contact-button">CONTACT</button>
+          </div>
         </div>
+      </div>
 
-        <div class="fnb__bottom">
-          <div class="fnb__menu-wrap">
-            <div class="fnb__menu">
-              <div class="fnb__menu-title"><a href="#">홈</a></div>
-              <div class="fnb__menu-divider"><p></p></div>
-              <div class="fnb__menu-title">
-                <a href="#">개인정보 취급방침</a>
-              </div>
-              <div class="fnb__menu-divider"><p></p></div>
-              <div class="fnb__menu-title"><a href="#">사이트 이용약관</a></div>
+      <div class="fnb__bottom">
+        <div class="fnb__menu-wrap">
+          <div class="fnb__menu">
+            <div class="fnb__menu-title"><a href="#">홈</a></div>
+            <div class="fnb__menu-divider"><p></p></div>
+            <div class="fnb__menu-title">
+              <a href="#">개인정보 취급방침</a>
             </div>
-            <div class="fnb__copyright">
-              <span
-                >COPYRIGHT (C) <a href="#">DOWON GREEN INDUSTRY Co.,Ltd</a>All
-                rights reserved.</span
-              >
-            </div>
+            <div class="fnb__menu-divider"><p></p></div>
+            <div class="fnb__menu-title"><a href="#">사이트 이용약관</a></div>
+          </div>
+          <div class="fnb__copyright">
+            <span
+              >COPYRIGHT (C) <a href="#">DOWON GREEN INDUSTRY Co.,Ltd</a>All
+              rights reserved.</span
+            >
           </div>
         </div>
-      </section>
-    </div>
+      </div>
+    </section>
   </body>
 </html>

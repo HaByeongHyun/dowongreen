@@ -14,6 +14,7 @@
       rel="stylesheet"
     />
     <!-- CSS -->
+    <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/common.css" />
     <link rel="stylesheet" href="css/location.css" />
     <link rel="stylesheet" href="assets/css/animate.min.css" />
@@ -30,164 +31,163 @@
     <title>오시는 길 - 도원그린산업</title>
   </head>
   <body>
-    <div id="wrap">
-      <!-- Header -->
-      <header id="mainGnb">
-        <div class="main__gnb-logo">
-          <a href="main.html"><img src="images/logo.jpg" alt="main-logo" /></a>
+    <!-- Header -->
+    <header id="mainGnb">
+      <div class="main__gnb-logo">
+        <a href="main.html"><img src="images/logo.jpg" alt="main-logo" /></a>
+      </div>
+      <div class="main__gnb-button">
+        <ul class="main__gnb-button-list">
+          <li class="main__gnb-button-detail"><a href="#">기업소개</a></li>
+          <li class="main__gnb-button-detail"><a href="#">생산제품</a></li>
+          <li class="main__gnb-button-detail"><a href="#">특허공법</a></li>
+          <li class="main__gnb-button-detail"><a href="#">시공실적</a></li>
+          <li class="main__gnb-button-detail"><a href="#">상담문의</a></li>
+          <li class="main__gnb-button-detail">
+            <a href="#">
+              <i class="fas fa-search"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <!-- Location Banner -->
+    <section id="bannerContainer">
+      <article class="banner-img">
+        <div class="banner-overlay">
+          <div class="banner">
+            <div class="banner-title"><h2>오시는길</h2></div>
+            <div class="banner-desc">
+              <p>사람과 자연이 함께하는 건강한 주거환경을 만들겠습니다.</p>
+            </div>
+          </div>
         </div>
-        <div class="main__gnb-button">
-          <ul class="main__gnb-button-list">
-            <li class="main__gnb-button-detail"><a href="#">기업소개</a></li>
-            <li class="main__gnb-button-detail"><a href="#">생산제품</a></li>
-            <li class="main__gnb-button-detail"><a href="#">특허공법</a></li>
-            <li class="main__gnb-button-detail"><a href="#">시공실적</a></li>
-            <li class="main__gnb-button-detail"><a href="#">상담문의</a></li>
-            <li class="main__gnb-button-detail">
-              <a href="#">
-                <i class="fas fa-search"></i>
+      </article>
+      <article class="about-us__wrap">
+        <div class="about-us__img"></div>
+        <div class="about-us__history"></div>
+      </article>
+    </section>
+
+    <section
+      id="location_wrap"
+      class="wow animate__fadeInUp"
+      data-wow-duration="2s"
+    >
+      <div class="location__map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3227.990762186951!2d127.07323131555707!3d35.99609232024605!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3570112c50fd5a91%3A0x9aed84f3b6faf331!2zKOycoCnrj4Tsm5Dqt7jrprDsgrDsl4UgKOq1rCwg64-E7JuQ6re466aw7LyA66-47Lm8KQ!5e0!3m2!1sko!2skr!4v1623147494785!5m2!1sko!2skr"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+        ></iframe>
+      </div>
+      <div class="location__address">
+        <div class="location__address-inner">
+          <div class="location__logo">
+            <img src="images/logo-ico.png" alt="logo" />
+          </div>
+          <div class="location__desc">
+            <div class="location__desc-icons">
+              <p><i class="fas fa-map-marker-alt"></i></p>
+              <span>본사 전라북도 익산시 안림길 31-5 (도순리 100-45)</span>
+            </div>
+            <div class="location__desc-icons">
+              <p><i class="fas fa-phone-alt"></i></p>
+              <span>063.834.7322</span>
+            </div>
+            <div class="location__desc-icons">
+              <p><i class="far fa-envelope"></i></p>
+              <span>dowon7731@naver.com</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <section id="fnbContainer" class="container">
+      <div class="fnb__wrap">
+        <div class="fnb__top">
+          <div class="fnb__logo">
+            <div class="fnb__logo-img">
+              <a href="main.html">
+                <img src="images/logo-foot.png" alt="footer-logo" />
               </a>
-            </li>
-          </ul>
-        </div>
-      </header>
-
-      <!-- Location -->
-      <section id="customerContainer" class="container">
-        <article class="banner-img">
-          <div class="banner-overlay">
-            <div class="banner">
-              <div class="banner-title"><h2>오시는길</h2></div>
-              <div class="banner-desc">
-                <p>사람과 자연이 함께하는 건강한 주거환경을 만들겠습니다.</p>
-              </div>
             </div>
-          </div>
-        </article>
-        <article class="about-us__wrap">
-          <div class="about-us__img"></div>
-          <div class="about-us__history"></div>
-        </article>
-      </section>
-
-      <section
-        class="location_wrap wow animate__fadeInUp"
-        data-wow-duration="2s"
-      >
-        <div class="location__map">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3227.990762186951!2d127.07323131555707!3d35.99609232024605!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3570112c50fd5a91%3A0x9aed84f3b6faf331!2zKOycoCnrj4Tsm5Dqt7jrprDsgrDsl4UgKOq1rCwg64-E7JuQ6re466aw7LyA66-47Lm8KQ!5e0!3m2!1sko!2skr!4v1623147494785!5m2!1sko!2skr"
-            width="600"
-            height="450"
-            style="border: 0"
-            allowfullscreen=""
-            loading="lazy"
-          ></iframe>
-        </div>
-        <div class="location__address">
-          <div class="location__address-inner">
-            <div class="location__logo">
-              <img src="images/logo-ico.png" alt="logo" />
-            </div>
-            <div class="location__desc">
-              <div class="location__desc-icons">
-                <p><i class="fas fa-map-marker-alt"></i></p>
-                <span>본사 전라북도 익산시 안림길 31-5 (도순리 100-45)</span>
-              </div>
-              <div class="location__desc-icons">
-                <p><i class="fas fa-phone-alt"></i></p>
-                <span>063.834.7322</span>
-              </div>
-              <div class="location__desc-icons">
-                <p><i class="far fa-envelope"></i></p>
-                <span>dowon7731@naver.com</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Footer -->
-      <section id="fnbContainer" class="container">
-        <div class="fnb__wrap">
-          <div class="fnb__top">
-            <div class="fnb__logo">
-              <div class="fnb__logo-img">
-                <a href="main.html">
-                  <img src="images/logo-foot.png" alt="footer-logo" />
-                </a>
-              </div>
-              <div class="fnb__logo-btn">
-                <div class="fnb__logo-btn-top fnb__logo-elements">
-                  <div class="fnb__logo-btn-title">
-                    <a href="#">
-                      <span>회사소개</span>
-                    </a>
-                  </div>
-                  <div class="fnb__logo-btn-title">
-                    <a href="#">
-                      <span>생산제품</span>
-                    </a>
-                  </div>
-                  <div class="fnb__logo-btn-title">
-                    <a href="#">
-                      <span>시공실적</span>
-                    </a>
-                  </div>
+            <div class="fnb__logo-btn">
+              <div class="fnb__logo-btn-top fnb__logo-elements">
+                <div class="fnb__logo-btn-title">
+                  <a href="#">
+                    <span>회사소개</span>
+                  </a>
                 </div>
-                <div class="fnb__logo-btn-bottom fnb__logo-elements">
-                  <div class="fnb__logo-btn-title">
-                    <a href="#">
-                      <span>회사연혁</span>
-                    </a>
-                  </div>
-                  <div class="fnb__logo-btn-title">
-                    <a href="#">
-                      <span>특허공법</span>
-                    </a>
-                  </div>
-                  <div class="fnb__logo-btn-title">
-                    <a href="#">
-                      <span>문의상담</span>
-                    </a>
-                  </div>
+                <div class="fnb__logo-btn-title">
+                  <a href="#">
+                    <span>생산제품</span>
+                  </a>
+                </div>
+                <div class="fnb__logo-btn-title">
+                  <a href="#">
+                    <span>시공실적</span>
+                  </a>
+                </div>
+              </div>
+              <div class="fnb__logo-btn-bottom fnb__logo-elements">
+                <div class="fnb__logo-btn-title">
+                  <a href="#">
+                    <span>회사연혁</span>
+                  </a>
+                </div>
+                <div class="fnb__logo-btn-title">
+                  <a href="#">
+                    <span>특허공법</span>
+                  </a>
+                </div>
+                <div class="fnb__logo-btn-title">
+                  <a href="#">
+                    <span>문의상담</span>
+                  </a>
                 </div>
               </div>
             </div>
-            <div class="fnb__info">
-              <p>유한회사 도원그린산업 | 대표:김은정</p>
-              <p>전북 익산시 왕궁면 안림길 31-5 (54575)</p>
-              <p>Tel. 063-834-7322 | Fax. 063-834-7795</p>
-              <p>E-mail. dowon7731@naver.com</p>
-            </div>
-            <div class="fnb__contact">
-              <h4 class="fnb__contact-elements">고객센터</h4>
-              <h2 class="fnb__contact-elements">063-834-7322</h2>
-              <button class="fnb__contact-button">CONTACT</button>
-            </div>
+          </div>
+          <div class="fnb__info">
+            <p>유한회사 도원그린산업 | 대표:김은정</p>
+            <p>전북 익산시 왕궁면 안림길 31-5 (54575)</p>
+            <p>Tel. 063-834-7322 | Fax. 063-834-7795</p>
+            <p>E-mail. dowon7731@naver.com</p>
+          </div>
+          <div class="fnb__contact">
+            <h4 class="fnb__contact-elements">고객센터</h4>
+            <h2 class="fnb__contact-elements">063-834-7322</h2>
+            <button class="fnb__contact-button">CONTACT</button>
           </div>
         </div>
+      </div>
 
-        <div class="fnb__bottom">
-          <div class="fnb__menu-wrap">
-            <div class="fnb__menu">
-              <div class="fnb__menu-title"><a href="#">홈</a></div>
-              <div class="fnb__menu-divider"><p></p></div>
-              <div class="fnb__menu-title">
-                <a href="#">개인정보 취급방침</a>
-              </div>
-              <div class="fnb__menu-divider"><p></p></div>
-              <div class="fnb__menu-title"><a href="#">사이트 이용약관</a></div>
+      <div class="fnb__bottom">
+        <div class="fnb__menu-wrap">
+          <div class="fnb__menu">
+            <div class="fnb__menu-title"><a href="#">홈</a></div>
+            <div class="fnb__menu-divider"><p></p></div>
+            <div class="fnb__menu-title">
+              <a href="#">개인정보 취급방침</a>
             </div>
-            <div class="fnb__copyright">
-              <span
-                >COPYRIGHT (C) <a href="#">DOWON GREEN INDUSTRY Co.,Ltd</a>All
-                rights reserved.</span
-              >
-            </div>
+            <div class="fnb__menu-divider"><p></p></div>
+            <div class="fnb__menu-title"><a href="#">사이트 이용약관</a></div>
+          </div>
+          <div class="fnb__copyright">
+            <span
+              >COPYRIGHT (C) <a href="#">DOWON GREEN INDUSTRY Co.,Ltd</a>All
+              rights reserved.</span
+            >
           </div>
         </div>
-      </section>
-    </div>
+      </div>
+    </section>
   </body>
 </html>
