@@ -2,6 +2,7 @@
 @import url('../webfonts/fonts.css');
 
 /* Global */
+
 :root {
   /* Color */
   --color-white: #ffffff;
@@ -32,9 +33,6 @@
 
   /* Font shadow */
   --font-shadow-white: 2px 2px 2px rgb(0 0 0 / 30%);
-
-  /* Annimation */
-  --annimation-duration: 0.3s;
 }
 
 #bannerContainer {
@@ -44,6 +42,7 @@
 #bannerContainer .banner-img {
   height: 23rem;
   background: url('../images/img (2).jpg') center/cover no-repeat;
+  background-attachment: fixed;
 }
 
 #bannerContainer .banner-overlay {
