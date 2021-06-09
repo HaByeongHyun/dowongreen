@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="DOWON GREEN INDUSTRY - WEB SITE" />
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="images/logo-ico.png" />
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
@@ -14,8 +16,17 @@
     <!-- CSS -->
     <link rel="stylesheet" href="css/common.css" />
     <link rel="stylesheet" href="css/location.css" />
+    <link rel="stylesheet" href="assets/css/animate.min.css" />
+    <!-- Wow.js -->
+    <script src="assets/js/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
     <!-- Font Awesome -->
-    <script src="js/all.min.js" defer></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
     <title>오시는 길 - 도원그린산업</title>
   </head>
   <body>
@@ -59,7 +70,10 @@
         </article>
       </section>
 
-      <section class="location_wrap">
+      <section
+        class="location_wrap wow animate__fadeInUp"
+        data-wow-duration="2s"
+      >
         <div class="location__map">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3227.990762186951!2d127.07323131555707!3d35.99609232024605!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3570112c50fd5a91%3A0x9aed84f3b6faf331!2zKOycoCnrj4Tsm5Dqt7jrprDsgrDsl4UgKOq1rCwg64-E7JuQ6re466aw7LyA66-47Lm8KQ!5e0!3m2!1sko!2skr!4v1623147494785!5m2!1sko!2skr"
@@ -76,16 +90,16 @@
               <img src="images/logo-ico.png" alt="logo" />
             </div>
             <div class="location__desc">
-              <div class="location__desc-marker">
-                <i class="fas fa-map-marker-alt"></i>
+              <div class="location__desc-icons">
+                <p><i class="fas fa-map-marker-alt"></i></p>
                 <span>본사 전라북도 익산시 안림길 31-5 (도순리 100-45)</span>
               </div>
-              <div class="location__desc-phone">
-                <i class="fas fa-phone-square-alt"></i>
+              <div class="location__desc-icons">
+                <p><i class="fas fa-phone-alt"></i></p>
                 <span>063.834.7322</span>
               </div>
-              <div class="location__desc-email">
-                <i class="far fa-envelope"></i>
+              <div class="location__desc-icons">
+                <p><i class="far fa-envelope"></i></p>
                 <span>dowon7731@naver.com</span>
               </div>
             </div>

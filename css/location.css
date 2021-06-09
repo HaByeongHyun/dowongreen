@@ -9,6 +9,7 @@
   --color-green: #40a150;
   --color-dark-green: #59795d;
   --color-black: #000000;
+  --color-black-accent: #231f20;
   --color-semi-black: #4a4a4a;
   --color-black-background: #242424;
   --color-black-background-footer: #1b1b1b;
@@ -81,7 +82,7 @@
 .location_wrap {
   width: 100%;
   height: 70rem;
-  margin: 0 auto;
+  margin: 5rem auto;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -113,4 +114,29 @@
 
 .location__logo {
   background: center/cover no-repeat;
+}
+
+.location__desc {
+  font-size: 1.5rem;
+  color: var(--color-black-accent);
+}
+
+.location__desc-icons {
+  margin: 1.2rem auto;
+  font-weight: var(--weight-bold);
+}
+
+.location__desc-icons p {
+  display: inline-block;
+  background-color: var(--color-black-accent);
+  height: 3rem;
+  width: 3rem;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 3rem;
+  margin-right: 1.2rem;
+}
+
+.location__desc-icons i {
+  color: var(--color-white);
 }
