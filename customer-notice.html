@@ -1,37 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="DOWON GREEN INDUSTRY - WEB SITE" />
+    <title>도원그린산업</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="webfonts/fonts.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/notice.css">
+    <script src="assets/js/jquery-1.12.4.min.js"></script>
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="js/common.js"></script>
     <title>공지사항 - 도원그린산업</title>
   </head>
   <body>
-    <div id="wrap">
-      <!-- Header -->
-      <header id="mainGnb">
-        <div class="main__gnb-logo">
-          <a href="main.html"><img src="images/logo.jpg" alt="main-logo" /></a>
+      <header id="gnb">
+        <ul class="main-menu">
+          <li><a href="/" class="logo"><img src="images/logo.jpg" alt="logo" /></a></li>
+          <li class="main-menu-item">
+            <a href="/introduce-00.html">기업소개</a>
+            <ul class="sub-menu">
+              <li><a href="/introduce-00.html">인사말</a></li>
+              <li><a href="/introduce-01.html">회사연혁</a></li>
+              <li><a href="/introduce-02.html">오시는 길</a></li>
+            </ul>
+          </li>
+          <li class="main-menu-item">
+            <a href="/products-00.html">생산제품</a>
+            <ul class="sub-menu">
+              <li><a href="/products-00.html">하이파우다 방수제</a></li>
+              <li><a href="/products-01.html">하이-원코트</a></li>
+              <li><a href="/products-02.html">결로 보온 단열재</a></li>
+              <li><a href="/products-03.html">그린-텍 바닥재</a></li>
+              <li><a href="/products-04.html">황토 에코 코트</a></li>
+              <li><a href="/products-05.html">황토 코트</a></li>
+              <li><a href="/products-06.html">하이-씰</a></li>
+              <li><a href="/products-07.html">몰탈코트</a></li>
+            </ul>
+          </li>
+          <li class="main-menu-item">
+            <a href="/patent-technologys-00.html">특허공법</a>
+            <ul class="sub-menu">
+              <li><a href="/patent-technologys-00.html">단열 보온 복합 방수</a></li>
+              <li><a href="/patent-technologys-00.html">천공시트 복합 방수</a></li>
+              <li><a href="/patent-technologys-00.html">콘크리트 구조물 외부 균열 보수</a></li>
+              <li><a href="/patent-technologys-00.html">황토 에코 코트 실내 도장</a></li>
+              <li><a href="/patent-technologys-00.html">황토 방수 페인트 방수 및 도장</a></li>
+              <li><a href="/patent-technologys-00.html">단열보온 및 결로방지</a></li>
+            </ul>
+          </li>
+          <li class="main-menu-item">
+            <a href="/performance-00.html">시공실적</a>
+            <ul class="sub-menu">
+              <li><a href="/performance-00.html">학교</a></li>
+              <li><a href="/performance-01.html">공공건물</a></li>
+              <li><a href="/performance-02.html">아파트</a></li>
+            </ul>
+          </li>
+          <li class="main-menu-item">
+            <a href="/customer-contact.html">고객센터</a>
+            <ul class="sub-menu">
+              <li><a href="/customer-notice.html">공지사항</a></li>
+              <li><a href="/customer-contact.html">문의상담</a></li>
+            </ul>
+          </li>
+        </ul>
         </div>
-        <div class="main__gnb-button">
-          <ul class="main__gnb-button-list">
-            <li class="main__gnb-button-detail"><a href="#">기업소개</a></li>
-            <li class="main__gnb-button-detail"><a href="#">생산제품</a></li>
-            <li class="main__gnb-button-detail"><a href="#">특허공법</a></li>
-            <li class="main__gnb-button-detail"><a href="#">시공실적</a></li>
-            <li class="main__gnb-button-detail"><a href="#">상담문의</a></li>
-            <li class="main__gnb-button-detail">
-              <a href="#">
-                <i class="fas fa-search"></i>
-              </a>
-            </li>
-          </ul>
-        </div>
+        </ul>
       </header>
-      <!-- Customer notice -->
-      <section id="customerContainer" class="container">
-        <div class="banner-img">
+      <!-- Notice Banner -->
+      <section id="bannerContainer">
+        <article class="banner-img">
           <div class="banner-overlay">
             <div class="banner">
               <div class="banner-title"><h2>공지사항</h2></div>
@@ -40,92 +82,124 @@
               </div>
             </div>
           </div>
-        </div>
-        <section class="customer-notice__wrap">
-          <div class="customer-notice__title"><h2>공지사항</h2></div>
-        </section>
+        </article>
       </section>
-      <!-- Footer -->
-      <section id="fnbContainer" class="container">
-        <div class="fnb__wrap">
-          <div class="fnb__top">
-            <div class="fnb__logo">
-              <div class="fnb__logo-img">
-                <a href="main.html">
-                  <img src="images/logo-foot.png" alt="footer-logo" />
-                </a>
-              </div>
-              <div class="fnb__logo-btn">
-                <div class="fnb__logo-btn-top fnb__logo-elements">
-                  <div class="fnb__logo-btn-title">
-                    <a href="#">
-                      <span>회사소개</span>
-                    </a>
-                  </div>
-                  <div class="fnb__logo-btn-title">
-                    <a href="#">
-                      <span>생산제품</span>
-                    </a>
-                  </div>
-                  <div class="fnb__logo-btn-title">
-                    <a href="#">
-                      <span>시공실적</span>
-                    </a>
-                  </div>
-                </div>
-                <div class="fnb__logo-btn-bottom fnb__logo-elements">
-                  <div class="fnb__logo-btn-title">
-                    <a href="#">
-                      <span>회사연혁</span>
-                    </a>
-                  </div>
-                  <div class="fnb__logo-btn-title">
-                    <a href="#">
-                      <span>특허공법</span>
-                    </a>
-                  </div>
-                  <div class="fnb__logo-btn-title">
-                    <a href="#">
-                      <span>문의상담</span>
-                    </a>
-                  </div>
-                </div>
+      <!-- Notice Content -->
+      <section class="notice__contents">
+        <div class="notice__contents-wrap">
+          <div class="notice__title">
+            <div class="notice__title-bar"></div>
+            <h2>공지사항</h2>
+          </div>
+          <div class="notice__button-set">
+            <select
+              name="select"
+              id="select-btn"
+              class="notice__button-select notice__button"
+            >
+              <option value="번호">번호</option>
+              <option value="제목">제목</option>
+              <option value="내용">내용</option>
+              <option value="날짜">날짜</option>
+              <option value="태그">태그</option>
+            </select>
+            <input type="text" class="notice__button-text notice__button" />
+            <button class="notice__button-search">검색</button>
+          </div>
+          <table class="notice__table">
+            <th>번호</th>
+            <th>제목</th>
+            <th>날짜</th>
+            <th>조회</th>
+            <tr>
+              <td>7</td>
+              <td>(유)도원그린산업 홈페이지 오픈</td>
+              <td>2021-05-07</td>
+              <td>6</td>
+            </tr>
+            <tr>
+              <td>6</td>
+              <td>[언론기사] 도원그린산업, ‘노후 경로당 환경개선사업’ 실시</td>
+              <td>2021-05-07</td>
+              <td>4</td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>[언론기사] (유)도원그린산업, 경로당 환경개선 사업 지원</td>
+              <td>2021-05-07</td>
+              <td>6</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>[언론기사] 익산 왕궁면, 착한기업 2곳 잇따라 선정</td>
+              <td>2021-05-07</td>
+              <td>4</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>
+                [언론기사] 도원그린산업, 새 해 첫 건축박람회에 친환경 제품
+                선보여
+              </td>
+              <td>2021-05-07</td>
+              <td>6</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>[언론기사] 도원그린산업, ‘노후 경로당 환경개선사업’ 실시</td>
+              <td>2021-05-07</td>
+              <td>4</td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>[언론기사] (유)도원그린케미칼 .. "확실한 친환경 방수제"</td>
+              <td>2021-05-07</td>
+              <td>4</td>
+            </tr>
+          </table>
+        </div>
+      </section>
+      <footer>
+        <div class="footer-top">
+          <div class="wrap">
+            <div>
+              <a href="/" class="footer-logo"></a>
+              <div class="fnb">
+                <a href="/introduce-00.html"><span>회사소개</span></a>
+                <a href="/products-00.html"><span>생산제품</span></a>
+                <a href="/performance-00.html"><span>시공실적</span></a>
+                <a href="/introduce-01.html"><span>회사연혁</span></a>
+                <a href="/patent-technologys-00.html"><span>특허공법</span></a>
+                <a href="/customer-contact.html"><span>문의상담</span></a>
               </div>
             </div>
-            <div class="fnb__info">
+            <div>
               <p>유한회사 도원그린산업 | 대표:김은정</p>
               <p>전북 익산시 왕궁면 안림길 31-5 (54575)</p>
               <p>Tel. 063-834-7322 | Fax. 063-834-7795</p>
               <p>E-mail. dowon7731@naver.com</p>
             </div>
-            <div class="fnb__contact">
-              <h4 class="fnb__contact-elements">고객센터</h4>
-              <h2 class="fnb__contact-elements">063-834-7322</h2>
-              <button class="fnb__contact-button">CONTACT</button>
+            <div>
+              <p>고객센터</p>
+              <h4>063-834-7322</h4>
+              <button>CONTACT</button>
             </div>
           </div>
         </div>
-
-        <div class="fnb__bottom">
-          <div class="fnb__menu-wrap">
-            <div class="fnb__menu">
-              <div class="fnb__menu-title"><a href="#">홈</a></div>
-              <div class="fnb__menu-divider"><p></p></div>
-              <div class="fnb__menu-title">
-                <a href="#">개인정보 취급방침</a>
-              </div>
-              <div class="fnb__menu-divider"><p></p></div>
-              <div class="fnb__menu-title"><a href="#">사이트 이용약관</a></div>
+        <div class="footer-bottom">
+          <div class="wrap">
+            <div>
+              <a href="#">홈</a>
+              <div class="divider"></div>
+              <a href="#">개인정보 취급방침</a>
+              <div class="divider"></div>
+              <a href="#">사이트 이용약관</a>
             </div>
-            <div class="fnb__copyright">
-              <span
-                >COPYRIGHT (C) <a href="#">DOWON GREEN INDUSTRY Co.,Ltd</a>All
-                rights reserved.</span
-              >
+            <div>
+              <span>COPYRIGHT (C) <a href="#">DOWON GREEN INDUSTRY Co.,Ltd</a>All rights reserved.</span>
             </div>
           </div>
         </div>
-      </section>
-    </div>
+      </footer>
   </body>
 </html>

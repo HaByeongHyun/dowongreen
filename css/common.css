@@ -2,6 +2,7 @@
 @import url('../webfonts/fonts.css');
 
 /* Global */
+
 :root {
   /* Color */
   --color-white: #ffffff;
@@ -13,6 +14,7 @@
   --color-black-background: #242424;
   --color-black-background-footer: #1b1b1b;
   --color-black-opacity: rgba(0, 0, 0, 0.7);
+  --color-white-opacity: rgba(255, 255, 255, 0.3);
   --color-grey: #7a7a7a;
   --color-dark-grey: #231f20;
 
@@ -21,173 +23,235 @@
   --weight-semi-bold: 500;
   --weight-regular: 400;
 
-  /* Font size */
-  --font-large: 3.6rem;
-  --font-regular: 2.8rem;
-  --font-small: 1.2rem;
-
   /* Font style */
   --family-font-Nanum: 'Nanum Gothic', sans-serif;
-
-  /* Annimation */
-  --annimation-duration: 0.3s;
 }
 
 html,
 body {
   margin: 0 auto;
+  color: var(--color-black);
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 10px;
 }
 
-html {
-  font-size: 10px;
+::selection {
+  background-color: var(--color-dark-green);
+}
+
+::-moz-selection{
+  background-color: var(--color-dark-green);
 }
 
 a {
   text-decoration: none;
-  color: var(--color-white);
-}
-
-ul {
-  padding-left: 0;
-}
-
-li {
-  list-style: none;
+  color: var(--color-black);
+  cursor: pointer;
 }
 
 button {
   background-color: transparent;
   cursor: pointer;
   border: var(--color-white);
+  color: var(--color-white);
   outline: none;
 }
 
-#wrap {
+section{
   width: 100%;
+  background: var(--color-white);
+}
+
+.no-drag {
+  -ms-user-select: none; 
+  -moz-user-select: -moz-none; 
+  -webkit-user-select: none; 
+  -khtml-user-select: none; 
+  user-select: none;
 }
 
 /* Header */
 
-#mainGnb {
+#gnb {
   background-color: var(--color-white);
-  display: flex;
-  justify-content: space-around;
-  position: sticky;
-  top: 0;
   width: 100%;
-  height: 8rem;
+  height: 82px;
+  font-size: 1.6rem;
   z-index: 1000;
-  transition: all 0.8s;
+  transition: all 0.3s;
+  border-bottom: 1px solid var(--color-semi-white);
 }
 
-.main__gnb-logo {
-  display: flex;
-  align-items: center;
+#gnb.sticky {
+  position: fixed;
+  height: 60px;
 }
 
-.main__gnb-button {
-  height: 100%;
-  display: flex;
+#gnb.sticky .main-menu > li > a {
+  padding: 19px 0;
 }
 
-.main__gnb-button-list {
-  display: flex;
+#gnb.sticky .sub-menu {
+  top: 38px;
+}
+
+#gnb .main-menu {
+  width: 1040px;
   height: 100%;
   margin: 0 auto;
-}
-
-.main__gnb-button-detail {
   display: flex;
-  padding: 0 3.6rem 0 3.6rem;
+  justify-content: space-between;
   align-items: center;
-  font-size: 1.6rem;
-  height: 100%;
 }
 
-.main__gnb-button-detail a {
-  color: var(--color-black);
+#gnb .main-menu li a {
+  height: 100%;
+  padding: 34px 0;
+}
+
+#gnb .main-menu-item {
+  position: relative;
+}
+
+#gnb .main-menu-item::before {
+  content: '';
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  left: 50%;
+  bottom: -24px;
+  transform: translateX(-50%);
+  transition: 0.3s ease;
+}
+
+#gnb .main-menu-item:hover > a {
+  color: var(--color-green);
+}
+
+#gnb .main-menu-item:hover::before {
+  width: 100%;
+  bottom: -10px;
+  background-color: var(--color-green);
+}
+
+#gnb .sub-menu {
+  position: absolute;
+  width: 300px;
+  top: 50px;
+  left: -20px;
+  font-size: 1.4rem;
+  background-color: var(--color-white);
+  box-shadow: 0 1px 3px var(--color-semi-white);
+  transition: all 0.6s;
+  display: none;
+}
+
+#gnb .sub-menu.active {
   display: block;
+}
+
+#gnb .sub-menu li a {
+  display: block;
+  width: 260px;
+  height: 100%;
+  padding: 16px 20px;
+  transition: all 0.3s;
+}
+
+#gnb .sub-menu li a:hover { 
+  background-color: #f1f1f1;
 }
 
 /* Footer */
 
-#fnbContainer {
+footer {
   width: 100%;
 }
 
-.fnb__wrap {
+footer * {
+  color: var(--color-white);
+  font-weight: var(--weight-regular);
+  font-size: 1.4rem;
+  line-height: 2;
+}
+
+footer .wrap {
+  width: 1040px;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer .footer-top {
+  width: 100%;
+  padding: 30px 0;
   background-color: var(--color-black-background);
+}
+
+footer  .footer-top .footer-logo {
+  display: inline-block;
+  width: 246px;
+  height: 50px;
+  background-image: url('../images/logo-foot.png');
+}
+
+footer  .footer-top .fnb {
+  width: 246px;
+}
+
+footer  .footer-top .fnb > a {
+  width: 33.3%;
+  padding-right: 40px;
+  position: relative;
+}
+
+footer  .footer-top .fnb > a:nth-child(3n) {
+  padding-right: 0;
+}
+
+footer  .footer-top h4 {
+  font-size: 2.4rem;
+  line-height: 1;
+  font-weight: var(--weight-bold);
+}
+
+footer  .footer-top button {
+  color: var(--color-white);
+  width: 160px;
+  height: 32px;
+  border: 1px solid var(--color-white);
+  margin-top: 24px;
+  transition: all 0.3s;
+}
+
+footer  .footer-top button:hover {
+  background-color: var(--color-white-opacity);
+}
+
+footer .footer-bottom {
   width: 100%;
-}
-
-.fnb__top {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  color: var(--color-white);
-  padding: 2.4rem 0 2.4rem 0;
-  margin: 0 auto;
-  width: 114rem;
-}
-
-.fnb__logo-btn {
-  font-size: var(--font-small);
-}
-
-.fnb__logo-elements {
-  display: flex;
-  justify-content: space-between;
-}
-
-.fnb__contact {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.fnb__info {
-  font-size: var(--font-small);
-}
-
-.fnb__contact-elements {
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
-.fnb__contact-button {
-  color: var(--color-white);
-  width: 10.5rem;
-  height: 3.3rem;
-  border: 0.2rem solid var(--color-white);
-  margin-top: 2.4rem;
-}
-
-.fnb__bottom {
+  padding: 20px 0;
   background-color: var(--color-black-background-footer);
-  display: flex;
-  color: var(--color-semi-white);
-  height: 5rem;
 }
 
-.fnb__menu-wrap {
-  font-family: var(--family-font-Nanum);
-  font-size: var(--font-small);
-  margin: 0 auto;
-  width: 114rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+footer .footer-bottom a {
+  font-size: 1.2rem;
+  transition: all 0.3s;
 }
 
-.fnb__menu {
-  display: flex;
-  align-items: center;
+footer .footer-bottom a:hover {
+  color: var(--color-grey);
 }
 
-.fnb__menu-divider {
-  height: 1.2rem;
-  width: 0.1rem;
+footer .footer-bottom .divider {
+  height: 12px;
+  width: 1px;
   background-color: var(--color-white);
   display: inline-block;
-  margin: 0 1.2rem;
+  margin: 0 12px;
 }
+
+
+
