@@ -2,6 +2,7 @@
 @import url('../webfonts/fonts.css');
 
 /* Global */
+
 :root {
   /* Color */
   --color-white: #ffffff;
@@ -9,32 +10,27 @@
   --color-green: #40a150;
   --color-dark-green: #59795d;
   --color-black: #000000;
-  --color-black-accent: #231f20;
   --color-semi-black: #4a4a4a;
   --color-black-background: #242424;
   --color-black-background-footer: #1b1b1b;
-  --color-black-opacity: rgba(0, 0, 0, 0.7);
+  --color-black-opacity: rgba(0, 0, 0, 0.3);
+  --color-white-opacity: rgba(255, 255, 255, 0.3);
   --color-grey: #7a7a7a;
   --color-dark-grey: #231f20;
 
   /* Font weight */
-  --weight-bold: 700;
-  --weight-semi-bold: 500;
-  --weight-regular: 400;
-
-  /* Font size */
-  --font-large: 3.6rem;
-  --font-regular: 2.8rem;
-  --font-small: 1.2rem;
+  --noto-thin: 100;
+  --noto-light: 300;
+  --noto-regular: 400;
+  --noto-medium: 500;
+  --noto-bold: 700;
+  --noto-black: 900;
+  --nanum-regular: 400;
+  --nanum-bold: 700;
+  --nanum-extrabold: 800;
 
   /* Font style */
   --family-font-Nanum: 'Nanum Gothic', sans-serif;
-
-  /* Font shadow */
-  --font-shadow-white: 2px 2px 2px rgb(0 0 0 / 30%);
-
-  /* Annimation */
-  --annimation-duration: 0.3s;
 }
 
 #introduceContainer {
@@ -58,11 +54,6 @@
   width: 50%;
 }
 
-#introduceContainer .introduce__contents:nth-child(1) {
-  padding-left: 15rem;
-  padding-right: 15rem;
-}
-
 #introduceContainer .introduce__contents {
   width: 50rem;
 }
@@ -71,7 +62,7 @@
   width: 100%;
   font-size: 3rem;
   line-height: 4.8rem;
-  font-weight: var(--weight-bold);
+  font-weight: var(--noto-bold);
   color: #231f20;
   margin-bottom: 3rem;
 }
@@ -79,6 +70,7 @@
 #introduceContainer .introduce__contents-desc {
   width: 100%;
   font-size: 1.5rem;
+  line-height: 3rem;
 }
 
 #introduceContainer .introduce-img {

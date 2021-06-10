@@ -13,15 +13,21 @@
   --color-semi-black: #4a4a4a;
   --color-black-background: #242424;
   --color-black-background-footer: #1b1b1b;
-  --color-black-opacity: rgba(0, 0, 0, 0.7);
+  --color-black-opacity: rgba(0, 0, 0, 0.3);
   --color-white-opacity: rgba(255, 255, 255, 0.3);
   --color-grey: #7a7a7a;
   --color-dark-grey: #231f20;
 
   /* Font weight */
-  --weight-bold: 700;
-  --weight-semi-bold: 500;
-  --weight-regular: 400;
+  --noto-thin: 100;
+  --noto-light: 300;
+  --noto-regular: 400;
+  --noto-medium: 500;
+  --noto-bold: 700;
+  --noto-black: 900;
+  --nanum-regular: 400;
+  --nanum-bold: 700;
+  --nanum-extrabold: 800;
 
   /* Font style */
   --family-font-Nanum: 'Nanum Gothic', sans-serif;
@@ -60,6 +66,7 @@ button {
 section {
   width: 100%;
   background: var(--color-white);
+  height: 100vh;
 }
 
 .no-drag {
@@ -73,13 +80,14 @@ section {
 /* Header */
 
 #gnb {
-  background-color: var(--color-white);
   width: 100%;
-  height: 82px;
-  font-size: 1.6rem;
-  z-index: 1000;
-  transition: all 0.3s;
+  height: 80px;
+  font-size: 1.5rem;
+  font-weight: var(--noto-bold);
+  background-color: var(--color-white);
   border-bottom: 1px solid var(--color-semi-white);
+  transition: all 0.3s;
+  z-index: 999;
 }
 
 #gnb.sticky {
@@ -88,7 +96,7 @@ section {
 }
 
 #gnb.sticky .main-menu > li > a {
-  padding: 19px 0;
+  padding: 21px 0;
 }
 
 #gnb.sticky .sub-menu {
@@ -104,9 +112,13 @@ section {
   align-items: center;
 }
 
+#gnb .main-menu .logo {
+  padding: 0;
+}
+
 #gnb .main-menu li a {
   height: 100%;
-  padding: 34px 0;
+  padding: 32px 0;
 }
 
 #gnb .main-menu-item {
@@ -137,12 +149,14 @@ section {
 #gnb .sub-menu {
   position: absolute;
   width: 300px;
-  top: 50px;
+  top: 48px;
   left: -20px;
-  font-size: 1.4rem;
+  font-size: 1.3rem;
+  font-weight: var(--noto-bold);
   background-color: var(--color-white);
   box-shadow: 0 1px 3px var(--color-semi-white);
   transition: all 0.6s;
+  z-index: 999;
   display: none;
 }
 
@@ -155,6 +169,7 @@ section {
   width: 260px;
   height: 100%;
   padding: 16px 20px;
+  color: var(--color-semi-black);
   transition: all 0.3s;
 }
 
@@ -170,9 +185,14 @@ footer {
 
 footer * {
   color: var(--color-white);
-  font-weight: var(--weight-regular);
   font-size: 1.4rem;
-  line-height: 2;
+  font-weight: var(--noto-regular);
+  line-height: 1.6;
+}
+
+footer p {
+  font-size: 1.4rem;
+  padding-bottom: 5px;
 }
 
 footer .wrap {
@@ -181,7 +201,7 @@ footer .wrap {
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
 }
 
 footer .footer-top {
@@ -199,11 +219,13 @@ footer .footer-top .footer-logo {
 
 footer .footer-top .fnb {
   width: 246px;
+  margin-top: 5px;
 }
 
 footer .footer-top .fnb > a {
   width: 33.3%;
   padding-right: 35px;
+  font-weight: var(--noto-medium);
   position: relative;
 }
 
@@ -214,7 +236,7 @@ footer .footer-top .fnb > a:nth-child(3n) {
 footer .footer-top h4 {
   font-size: 2.4rem;
   line-height: 1;
-  font-weight: var(--weight-bold);
+  font-weight: var(--noto-bold);
 }
 
 footer .footer-top button {
@@ -232,8 +254,12 @@ footer .footer-top button:hover {
 
 footer .footer-bottom {
   width: 100%;
-  padding: 20px 0;
+  padding: 10px 0;
   background-color: var(--color-black-background-footer);
+}
+
+footer .footer-bottom span {
+  font-size: 1.2rem;
 }
 
 footer .footer-bottom a {

@@ -1,5 +1,9 @@
 $(document).ready(function(){
     
+    // SECTION FADE-IN
+    $("section").css("display","none");
+    $("section").fadeIn(500);
+
     // NO DRAG
     $("#gnb").addClass("no-drag");
 
