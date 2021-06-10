@@ -1,0 +1,81 @@
+@charset "utf-8";
+@import url('../webfonts/fonts.css');
+
+/* Global */
+
+:root {
+  /* Color */
+  --color-white: #ffffff;
+  --color-semi-white: #dedede;
+  --color-green: #40a150;
+  --color-dark-green: #59795d;
+  --color-black: #000000;
+  --color-semi-black: #4a4a4a;
+  --color-black-background: #242424;
+  --color-black-background-footer: #1b1b1b;
+  --color-black-opacity: rgba(0, 0, 0, 0.3);
+  --color-white-opacity: rgba(255, 255, 255, 0.3);
+  --color-grey: #7a7a7a;
+  --color-dark-grey: #231f20;
+
+  /* Font weight */
+  --noto-thin: 100;
+  --noto-light: 300;
+  --noto-regular: 400;
+  --noto-medium: 500;
+  --noto-bold: 700;
+  --noto-black: 900;
+  --nanum-regular: 400;
+  --nanum-bold: 700;
+  --nanum-extrabold: 800;
+
+  /* Font style */
+  --family-font-Nanum: 'Nanum Gothic', sans-serif;
+
+  /* Font shadow */
+  --font-shadow-white: 2px 2px 2px rgb(0 0 0 / 30%);
+}
+
+#bannerContainer {
+  width: 100%;
+  height: 23rem;
+}
+
+#bannerContainer .banner-img {
+  height: 100%;
+  background: url('../images/img (23).jpg') center/cover no-repeat;
+  background-attachment: fixed;
+}
+
+#bannerContainer .banner-overlay {
+  background-color: rgba(0, 0, 0, 0.3);
+  height: 100%;
+}
+
+#bannerContainer .banner {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--color-white);
+  text-shadow: var(--font-shadow-white);
+}
+
+#bannerContainer .banner-title {
+  font-size: 3.6rem;
+  margin-bottom: 1.2rem;
+  font-weight: var(--noto-bold);
+  text-shadow: var(--font-shadow-white);
+}
+
+#bannerContainer .banner-desc {
+  font-size: 1.8rem;
+  font-weight: var(--noto-regular);
+}
+
+#bannerContainer .banner-desc p {
+  margin-top: 0;
+  font-family: 'Noto Sans KR', sans-serif;
+}

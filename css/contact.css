@@ -82,10 +82,9 @@
 
 .contact__form-container {
   width: 114rem;
-  height: 74rem;
+  height: auto;
   margin: 0 auto;
   padding-top: 15rem;
-  padding-bottom: 25rem;
 }
 .contact__form {
   width: 68.4rem;
@@ -115,7 +114,7 @@
 .contact__form-main {
   display: flex;
   flex-direction: column;
-  margin: 2.4rem auto;
+  margin: 0 auto;
   width: 100%;
 }
 
