@@ -105,10 +105,15 @@
   align-items: center;
 }
 
+.introduce__certificate-wrap div {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+}
+
 #introduceContainer .introduce__certificate-wrap img {
-  width: 17rem;
-  height: 24rem;
-  margin: 0 1.2rem;
+  width: 90%;
+  height: auto;
 }
 
 /* Media */

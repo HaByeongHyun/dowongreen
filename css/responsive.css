@@ -4,6 +4,22 @@
 
 @media Screen and (max-width: 1080px) {
   /* introduce responsive */
+
+  #introduceContainer
+    article:nth-of-type(odd)
+    .introduce__inner
+    .introduce__desc-wrap {
+    margin-left: 12rem;
+    margin-right: 3rem;
+  }
+
+  #introduceContainer
+    article:nth-of-type(even)
+    .introduce__inner
+    .introduce__desc-wrap {
+    margin-left: 3rem;
+    margin-right: 12rem;
+  }
 }
 
 /* MOBILE */
