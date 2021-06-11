@@ -9,7 +9,7 @@
     article:nth-of-type(odd)
     .introduce__inner
     .introduce__desc-wrap {
-    margin-left: 12rem;
+    margin-left: 15rem;
     margin-right: 3rem;
   }
 
@@ -18,11 +18,76 @@
     .introduce__inner
     .introduce__desc-wrap {
     margin-left: 3rem;
-    margin-right: 12rem;
+    margin-right: 15rem;
+  }
+
+  #introduceContainer .introduce__contents {
+    width: 97%;
   }
 }
 
 /* MOBILE */
 
 @media Screen and (max-width: 768px) {
+  #introduceContainer {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+  }
+
+  #introduceContainer article:nth-of-type(odd) .introduce__inner {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 0 0 10rem 0;
+  }
+
+  #introduceContainer article:nth-of-type(even) .introduce__inner {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 0 0 10rem 0;
+  }
+
+  #introduceContainer .introduce__contents-title h3 {
+    font-size: 2.4rem;
+  }
+
+  #introduceContainer
+    article:nth-of-type(odd)
+    .introduce__inner
+    .introduce__desc-wrap {
+    width: 100%;
+    margin: 2rem auto;
+  }
+
+  #introduceContainer
+    article:nth-of-type(even)
+    .introduce__inner
+    .introduce__desc-wrap {
+    width: 100%;
+    margin: 2rem auto;
+  }
+
+  #introduceContainer .introduce-img {
+    width: 100%;
+    height: 20rem;
+  }
+
+  #introduceContainer article:nth-of-type(2) .introduce-img {
+    width: 100%;
+    height: 30rem;
+  }
+
+  #introduceContainer .introduce__contents {
+    width: 100%;
+    padding: 0 3rem 0 3rem;
+  }
+
+  #introduceContainer .introduce__certificate-wrap img {
+    width: 90%;
+    height: auto;
+  }
 }

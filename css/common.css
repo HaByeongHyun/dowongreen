@@ -134,8 +134,9 @@ section {
   top: 38px;
 }
 
+/* width temp change */
 #gnb .main-menu {
-  width: 1040px;
+  width: 96%;
   height: 100%;
   margin: 0 auto;
   display: flex;
@@ -236,8 +237,9 @@ footer p {
   margin-bottom: 5px;
 }
 
+/* width temp change */
 footer .wrap {
-  width: 1040px;
+  width: 96%;
   height: 100%;
   margin: 0 auto;
   display: flex;
