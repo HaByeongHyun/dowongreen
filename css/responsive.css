@@ -4,7 +4,6 @@
 
 @media Screen and (max-width: 1080px) {
   /* introduce responsive */
-
   #introduceContainer
     article:nth-of-type(odd)
     .introduce__inner
@@ -24,11 +23,31 @@
   #introduceContainer .introduce__contents {
     width: 97%;
   }
+
+  /* history responsive */
+  .about-us__img {
+    width: 30%;
+    height: 20rem;
+    background: url('../images/img (2).png') center/cover no-repeat;
+  }
+
+  .about-us__history {
+    width: 50%;
+    height: 114rem;
+    background: url('../images/history.jpg') center/cover no-repeat;
+    background-size: auto;
+  }
 }
 
 /* MOBILE */
 
 @media Screen and (max-width: 768px) {
+  /* Global */
+  .banner-title {
+    font-size: 2.4rem;
+  }
+
+  /* introduce responsive*/
   #introduceContainer {
     width: 100%;
     height: auto;
@@ -90,4 +109,6 @@
     width: 90%;
     height: auto;
   }
+
+  /* history responsive */
 }

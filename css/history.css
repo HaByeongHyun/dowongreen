@@ -64,10 +64,9 @@
 }
 
 #bannerContainer .banner-title {
-  font-size: 3.6rem;
-  margin-bottom: 1.2rem;
   font-weight: var(--noto-bold);
   text-shadow: var(--font-shadow-white);
+  font-size: 3.6rem;
 }
 
 #bannerContainer .banner-desc {
@@ -92,13 +91,14 @@
 }
 
 .about-us__img {
-  width: 40rem;
-  height: 23rem;
+  width: 20%;
+  height: 20rem;
   background: url('../images/img (2).png') center/cover no-repeat;
 }
 
 .about-us__history {
-  width: 97.5rem;
+  width: 50%;
   height: 114rem;
   background: url('../images/history.jpg') center/cover no-repeat;
+  background-size: auto;
 }
