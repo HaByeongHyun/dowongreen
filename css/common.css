@@ -42,7 +42,8 @@ body {
 }
 
 ::selection {
-  background-color: var(--color-dark-green);
+  background-color: var(--color-green);
+  color: var(--color-white);
 }
 
 ::-moz-selection {
@@ -134,9 +135,8 @@ section {
   top: 38px;
 }
 
-/* width temp change */
 #gnb .main-menu {
-  width: 96%;
+  width: 1040px;
   height: 100%;
   margin: 0 auto;
   display: flex;
@@ -210,14 +210,6 @@ section {
   background-color: #f1f1f1;
 }
 
-#gnb .navbar__toggle-btn {
-  position: absolute;
-  top: 2.4rem;
-  right: 3rem;
-  font-size: 2.4rem;
-  display: none;
-}
-
 /* Footer */
 
 footer {
@@ -237,9 +229,8 @@ footer p {
   margin-bottom: 5px;
 }
 
-/* width temp change */
 footer .wrap {
-  width: 96%;
+  width: 1040px;
   height: 100%;
   margin: 0 auto;
   display: flex;
@@ -358,7 +349,7 @@ footer .footer-bottom .divider {
   min-width: 280px;
   height: auto;
   position: fixed;
-  top: calc(80px + 18%);
+  top: calc(80px + 10%);
   left: 4%;
   background-color: var(--color-white);
   z-index: 1;
